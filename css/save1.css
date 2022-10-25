@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #202732;
+    overflow-x: hidden;
+}
+
+:root {
+    --main-radius: 20px;
+    --main-padding: 15px;
+}
+
+/*
+
+Linear changing background.
+
+.background {
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: linear-gradient(-45deg, #804000, #331a00, #804000);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 50s ease-in-out infinite;
+}
+
+@keyframes change {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}*/
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20fr 4fr 4fr 1fr ;
+    grid-gap: 3rem;
+    padding: 4%;
+}
+
+@media only screen and (max-width:550px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 1fr 1fr 1fr 0.5fr;
+    }
+}
+
+main {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url(image/blob.png);
+}
+
+.blob {
+    size-adjust: border;
+    position: fixed;
+    padding: center;
+    padding-right: 7%;
+    width: 100%;
+    height: 65%;
+    object-fit: contain;
+    object-position: center;
+}
+
+h1{
+    padding-top: center;
+    padding-left: center;
+    position: relative;
+    text-align: center;
+    padding-top: 13%;
+    background: transparent;
+    padding-left: 4%;
+    font-size: 12rem;
+}
+
+@media only screen and (max-height:750px) and (max-width: 550px) {
+    .blob { 
+        height: 75%;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:1700px) {
+    h1 {
+        font-size: 6.5rem;
+    }
+}
+
+@media only screen and (max-height:700px) and (max-width: 700px) {
+    h1 { 
+        font-size: 6rem;
+    }
+}
+
+.whoami {
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    border: 3px solid rgba(168, 51, 168, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.project1 {
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    border: 3px solid rgba(168, 51, 168, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/*
+
+If another project needs to be activated, you need to uncomment it here and in HTML. 
+You also need to add sizes of the conteiners and ajust everything (color, ).
+
+.project2 {
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.project3 {
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+}
+
+.project4 {
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+}
+
+.project5 {
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+}*/
+
+footer {
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    border: 3px solid rgba(168, 51, 168, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
